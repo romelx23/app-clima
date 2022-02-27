@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'monseratt','san-serif';
+    background: rgb(87, 84, 84);
+}
+
+.app{
+    background-image: url('../assets/cold-bg.jpg');
+    background-size: cover;
+    transition: background 0.4s ease;
+    background-position: center;
+}
+.app.warn{
+    background-image: url('../assets/warm-bg.jpg');
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(37, 37, 37, 0.75));
+}
+
+.search-box{
+    /* background:linear-gradient(rgb(241, 204, 124),rgb(255, 151, 137)) ; */
+    background:linear-gradient(rgb(124, 175, 241),rgb(137, 178, 255)) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    width: 80%;
+    font-size:20px ;
+    border-radius: 20px;
+    box-shadow: 5px 10px rgba(223, 223, 223, 0.2);
+}
+
+.search-box.warn{
+    background:linear-gradient(rgb(241, 204, 124),rgb(255, 151, 137)) ;
+}
+
+.search-box h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-fill-color: transparent;
+    /* background: -webkit-linear-gradient(yellow,red); */
+    background: -webkit-linear-gradient(rgb(0, 204, 255),rgb(0, 89, 255));
+    -webkit-background-clip: text;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+.form-control{
+    padding: 15px;
+    border-radius: 0px 0px 16px 16px;
+    background: rgba(241, 241, 241, 0.849);
+    transition: background 0.4s ease;
+}
+.form-control:focus{
+    background: rgb(255, 255, 255);
+}
+button{
+    margin-top: 20px;
+}
+.location-box{
+    color: aliceblue;
+    font-size:32px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
+.location-box .date{
+    color: aliceblue;
+    font-size:20px;
+    font-weight: 300;
+    font-family: italic;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
+.wheater-box .temp{
+    color: #fff;
+    background-color: rgba(255,255,255,0.2);
+    margin: 30px auto;
+    border-radius: 16px;
+    padding: 15px 25px;
+    font-size:100px;
+    font-weight: 900;
+    text-shadow: 3px 6px rgb(50, 50, 70,0.5);
+}
+.wheater-box .wheater{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.wheater-box{
+    text-align: center;
+}
